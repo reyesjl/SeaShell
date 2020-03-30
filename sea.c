@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "sea_loop.h"
+#include "term/sea_loop.h"
 
 int main(int argc, char **argv) {
     // Pre-startup if needed...

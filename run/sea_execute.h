@@ -6,7 +6,7 @@
 
 // this is a simple fork() and exec() program from our first labs.
 // it executes the basic command.
-int sea_execute(char **args)
+int sea_launch(char **args)
 {
   pid_t pid, wpid;
   int status;
