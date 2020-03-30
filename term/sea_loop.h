@@ -5,21 +5,6 @@
 #include "../run/sea_execute.h"
 #include "existing.h"
 
-// Prompt loop
-void sea_loop(void) {
-    char *line;
-    char **args;
-    int status;
-
-    // Prompt user for input and process lines
-    do {
-        printf("sea@sandyhost>$ ");        // prompt
-        line = sea_read_line();             // read line
-        args = sea_split_line(line);        // parse line into arguments
-        status = sea_execute(args);         // run process
-    } while (status);
-}
-
 //  Decides to run an existing system function,
 //  or a custom command.
 int sea_execute(char **args)
@@ -38,4 +23,19 @@ int sea_execute(char **args)
   }
 
   return sea_launch(args);
+}
+
+// Prompt loop
+void sea_loop(void) {
+    char *line;
+    char **args;
+    int status;
+
+    // Prompt user for input and process lines
+    do {
+        printf("sea@sandyhost>$ ");        // prompt
+        line = sea_read_line();             // read line
+        args = sea_split_line(line);        // parse line into arguments
+        status = sea_execute(args);         // run process
+    } while (status);
 }

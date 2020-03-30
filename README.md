@@ -22,6 +22,26 @@ implementation consists of 3 parts.
 2. The Executer
 3. The Shell Subsystems
 
+## The folder structure
+The main sea.c file in the root. Everything inside term consists of getting the terminal running.
+The loop prompt, and the existing commands part of the unix shell. Such as ps, ls, exit, help, etc.
+run folder holds the code responsible for runnign the command. Line is everything required to parse
+the input text from the terminal line.
+
+  sea.c
+
+  line -+
+        |-- sea_read_line.h
+        |-- sea_split_line.h
+
+  run  -+
+        |-- sea_execute.h
+  
+  term -+
+        |-- sea_lopp.h
+        |-- existing.h 
+        
+
 # 1. The Parser
 
 sea_read_line.h as well as sea_split_line.h are the parsers. Read
