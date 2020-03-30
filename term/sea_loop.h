@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "line/sea_read_line.h"
-#include "line/sea_split_line.h"
-#include "run/sea_execute.h"
-#include "term/existing.h"
+#include "../line/sea_read_line.h"
+#include "../line/sea_split_line.h"
+#include "../run/sea_execute.h"
+#include "existing.h"
 
 // Prompt loop
 void sea_loop(void) {
