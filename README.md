@@ -18,9 +18,9 @@
 This is a shell I wrote in C, hence it's name, Sea Shell. It's 
 implementation consists of 3 parts. 
     
-1 - The Parser
-2 - The Executer
-3 - The Shell Subsystems
+1. The Parser
+2. The Executer
+3. The Shell Subsystems
 
 ## 1.  The Parser
 
@@ -57,11 +57,11 @@ redirections.
 
     >$ A | B | C | D < infile > outfile
 
-i.      A reads in from 'infile'
-ii.     passes it's output to B's input
-iii.    B passes it's output to C's input
-iv.     C does the same to D
-v.      Finally D's output goes to the 'outfile'
+1. 'infile' is redirected as input to A
+2. A pipes output to B's input
+3. B pipes output to C's input
+4. C pipes output to D's input
+5. Finally D's output is redirected to 'outfile'
 
 ## 3.  The Shell Subsystems
 
@@ -71,10 +71,13 @@ between backticks.
 ### Example: 
 
 Environment variables
+
     >$ ${VAR}
 
 Wildcards
+
     >$ javac *.java 
 
 Subsystems
+
     >$ `awk -F: '{print $6}'
