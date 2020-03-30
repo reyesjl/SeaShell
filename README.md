@@ -49,3 +49,7 @@ If it was successfull the child runs the command along with the arguments
 given.
 
 # 3. The Shell Subsytems
+This section contains the existing calls that make everything sort of possible.
+Commands liek exit(), help(), and so on. They are defined under existing.h 
+sea_execute() decides wether or not to run the existing system call, or one
+of my own functions built.
