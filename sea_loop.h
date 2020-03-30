@@ -12,7 +12,7 @@ void sea_loop(void) {
 
     // Prompt user for input and process lines
     do {
-        printf("root@localhost>$ ");        // prompt
+        printf("sea@sandyhost>$ ");        // prompt
         line = sea_read_line();             // read line
         args = sea_split_line(line);        // parse line into arguments
         status = sea_execute(args);         // run process
