@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "term_loop.h": "c",
+        "stdio.h": "c"
+    }
+}
