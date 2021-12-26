@@ -13,7 +13,7 @@
 
 
 
-## 0.  Introduction 
+## Introduction 
 
 This is a shell I wrote in C, hence it's name, Sea Shell. It's 
 implementation consists of 3 parts. 
